@@ -1,0 +1,45 @@
+#box{
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode;*/
+    animation: box 4s ease-in-out;
+}
+
+@keyframes box {
+    0%{
+        background-color: blue; 
+    }
+    20%{
+       background-color: red;
+       transform: translateX(200px, 0px);
+    }
+    40%{
+       background-color: green;
+       transform: translate(200px, 200px);
+       border-radius: 100%;
+    }
+    60%{
+       background-color: black;
+       transform: translate(-200px, 200px);
+    }
+    80%{
+       background-color:brown ;
+       transform: translate(-200px, -200px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+#images{
+    animation: images 5s linear infinite;
+}
+
+@keyframes images {
+    0%{
+        transform: translateX(1200px);
+    }
+    100%{
+        transform: translateX(-200px);
+    }
+}
